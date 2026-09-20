@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Validation</title>
+</head>
+<body>
+
+    <h1>Simple Form</h1>
+
+    <input type="text" id="name" placeholder="Enter your name">
+    <button onclick="validateForm()">Submit</button>
+
+    <p id="message"></p>
+
+    <script>
+        function validateForm() {
+            let name = document.getElementById("name").value;
+
+            if (name === "") {
+                document.getElementById("message").innerText =
+                    "Please enter your name";
+            } else {
+                document.getElementById("message").innerText =
+                    "Form submitted successfully!";
+            }
+        }
+    </script>
+
+</body>
+</html>

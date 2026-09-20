@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Color Change Button</title>
+
+    <style>
+        button {
+            padding: 15px 30px;
+            font-size: 18px;
+            background-color: blue;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Button Color Changer</h1>
+
+    <button onclick="changeColor()">Click Me</button>
+
+    <script>
+        function changeColor() {
+            document.querySelector("button").style.backgroundColor = "green";
+        }
+    </script>
+
+</body>
+</html>
